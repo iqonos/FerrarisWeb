@@ -1,0 +1,115 @@
+article {
+    border-bottom: 2px solid #901414;
+
+    .container-title {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 0;
+        cursor: pointer;
+        .title-no-boostrap {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .material-symbols-outlined {
+            transition: .7s;
+            font-variation-settings:
+                'FILL' 1,
+                'wght' 700,
+        }
+        .material-symbols-outlined.active{
+            transform: rotatez(-180deg);
+            transition: .7s;
+        }
+    }
+
+    .container-info {
+        padding: 0 25px;
+        height: 0;
+        overflow: hidden;
+        transition: 0.5s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .list-uso {
+            .item-list-uso {
+                font-size: 14px;
+                list-style-type: '✔️';
+                margin: 7px 0;
+            }
+        }
+
+        .mas-info-prod {
+            .title-mas-info-prod {
+                margin: 15px 0;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .container-info.active {
+        height: 100%;
+    }
+
+    img {
+        width: 100%;
+        max-width: 150px;
+        max-height: 300px;
+        object-fit: contain;
+        margin: 40px 0;
+        filter: drop-shadow(1px 1px 10px #00000071);
+    }
+}
+
+@media (min-width:550px) {
+    article {
+    
+        .container-info {
+            flex-direction: row-reverse;
+            gap: 50px;
+            justify-content: space-between;
+            max-width: 800px;
+            margin: auto;
+            .container-info-prod{
+                padding-left: 35px;
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media (min-width:1024px) {
+    article {
+    
+        .container-title {
+    
+            .title-no-boostrap {
+                font-size: 22px;
+            }
+        }
+    
+        .container-info {
+            .container-info-prod{
+                .list-uso {
+                    .item-list-uso {
+                        font-size: 17px;
+                    }
+                }
+                
+                .mas-info-prod {
+                    .title-mas-info-prod {
+                        font-size: 20px;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    
+        img {    
+            max-width: 200px;
+        }
+    }
+}
+
+

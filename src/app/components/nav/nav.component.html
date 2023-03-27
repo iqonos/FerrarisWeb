@@ -1,0 +1,76 @@
+
+<nav>
+    <header class="container-header-nav">
+        <ul class="container-item-info-header">
+            <li class="item-info-header">
+                <span class="material-symbols-outlined icon-info-header">location_on</span>
+                <span class="txt-item-header">Av. Maipú 319 - Córdoba Capital</span>
+            </li>
+            <li class="item-info-header">
+                <span class="material-symbols-outlined icon-info-header">call</span>
+                <span class="txt-item-header">Tel/Fax: (0351)-4227109</span>
+            </li>
+            <li class="item-info-header">
+                <img src="../../../assets/img/whatsapp.svg" alt="">
+                <span class="txt-item-header">Cel: +5493516532020</span>
+            </li>
+            <li class="item-info-header">
+                <span class="material-symbols-outlined icon-info-header">mail</span>
+                <span class="txt-item-header">ferrarismatafuegos@hotmail.com</span>
+            </li>
+        </ul>
+    </header>
+    <div class="container-nav">
+        <div class="container-icon-menu" (click)="openMenu()">
+            <span class="material-symbols-outlined">menu</span>
+        </div>
+        <div class="logo-ferraris">
+            <img src="../../../assets/img/logo-ferraris-matafuegos.webp" alt="">
+            <p>SEGURIDAD CONTRA INCENDIOS</p>
+        </div>
+        <ul class="container-items-menu-no-bar">
+            <li routerLink="/" class="item-menu-no-bar" [ngClass]="urlActiva=='0'?'active':''" >INICIO</li>
+            <li routerLink="/servicios" class="item-menu-no-bar" [ngClass]="urlActiva=='1'?'active':''">SERVICIOS</li>
+            <li routerLink="/productos" class="item-menu-no-bar" [ngClass]="urlActiva=='2'?'active':''">PRODUCTOS</li>
+            <li routerLink="/la-empresa" class="item-menu-no-bar" [ngClass]="urlActiva=='3'?'active':''">LA EMPRESA</li>
+            <li routerLink="/contacto" class="item-menu-no-bar" [ngClass]="urlActiva=='4'?'active':''">CONTACTO</li>
+        </ul>
+        <div class="container-utn-caferac-logo">
+            <img src="../../../assets/img/logo-cafarec.webp" alt="">
+            <img src="../../../assets/img/logo-utn.webp" alt="">
+        </div>
+    </div>
+</nav>
+
+<aside class="container-menu" [class.active]="isOpenMenu">
+    <header class="header-menu">
+        <img src="../../../assets/img/logo-ferraris-matafuegos.webp" alt="">
+        <span class="material-symbols-outlined" (click)="openMenu()">arrow_back</span>
+    </header>
+    <ul class="container-items-menu">
+        <li routerLink="/" class="item-menu" [ngClass]="urlActiva=='0'?'active':''">INICIO</li>
+        <li routerLink="/servicios" class="item-menu" [ngClass]="urlActiva=='1'?'active':''">SERVICIOS</li>
+        <li routerLink="/productos" class="item-menu" [ngClass]="urlActiva=='2'?'active':''">PRODUCTOS</li>
+        <li routerLink="/la-empresa" class="item-menu" [ngClass]="urlActiva=='3'?'active':''">LA EMPRESA</li>
+        <li routerLink="/contacto" class="item-menu" [ngClass]="urlActiva=='4'?'active':''">CONTACTO</li>
+    </ul>
+    <ul class="container-item-info-local">
+        <li class="item-info-local">
+            <span class="material-symbols-outlined icon-info-local">location_on</span>
+            <span>Av. Maipú 319 - Córdoba Capital</span>
+        </li>
+        <li class="item-info-local">
+            <span class="material-symbols-outlined icon-info-local">call</span>
+            <span>Tel/Fax: (0351)-4227109</span>
+        </li>
+        <li class="item-info-local">
+            <img src="../../../assets/img/whatsapp.svg" alt="">
+            <span>Cel: +5493516532020</span>
+        </li>
+        <li class="item-info-local">
+            <span class="material-symbols-outlined icon-info-local">mail</span>
+            <span>ferrarismatafuegos@hotmail.com</span>
+        </li>
+    </ul>
+</aside>
+<div class="backdrop-menu" [class.active]="isOpenMenu" (click)="openMenu()"></div>

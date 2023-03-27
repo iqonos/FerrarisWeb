@@ -1,0 +1,26 @@
+.space-nav-margin{
+    height: 70px;
+}
+@media (min-width:425px) {
+    .space-nav-margin{
+       height:  80px;
+    }
+}
+
+@media (min-width:768px) {
+    .space-nav-margin{
+       height:  115px;
+    }
+}
+
+@media (min-width:1024px) {
+    .space-nav-margin{
+       height: 120px;
+    }
+}
+
+@media (min-width:1440px) {
+    .space-nav-margin{
+       height: 155px;
+    }
+}

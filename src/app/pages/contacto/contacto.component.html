@@ -1,0 +1,52 @@
+<app-header-page title="CONTACTANOS"></app-header-page>
+<main>
+    <section>
+        <article class="container-info-local">
+            <ul class="container-item-info-local">
+                <li class="item-info-local">
+                    <span class="material-symbols-outlined icon-info-local">location_on</span>
+                    <span class="txt-info-local">Av. Maipú 319 - Córdoba Capital</span>
+                </li>
+                <li class="item-info-local">
+                    <span class="material-symbols-outlined icon-info-local">call</span>
+                    <span class="txt-info-local">Tel/Fax: (0351)-4227109</span>
+                </li>
+                <li class="item-info-local">
+                    <img src="../../../assets/img/whatsapp.svg" alt="">
+                    <span class="txt-info-local">Cel: +5493516532020</span>
+                </li>
+                <li class="item-info-local">
+                    <span class="material-symbols-outlined icon-info-local">mail</span>
+                    <span class="txt-info-local">ferrarismatafuegos@hotmail.com</span>
+                </li>
+            </ul>
+        </article>
+        <article class="container-mensaje-article">
+            <h2 class="title-mensaje">Envianos un mensaje</h2>
+            <form>
+                <label class="label-form-item">
+                    Nombre *
+                    <input type="text">
+                </label>
+                <label class="label-form-item">
+                    Email *
+                    <input type="text">
+                </label>
+                <label class="label-form-item">
+                    Asunto
+                    <input type="text">
+                </label>
+                <label class="label-form-item">
+                    Mensaje *
+                    <textarea></textarea>
+                </label>
+                <button (click)="sendEmail($event)">ENVIAR MENSAJE</button>
+            </form>
+        </article>
+    </section>
+    <div class="map-container">
+        <div class="background-map"></div>
+        <div  style="width: 100vw;position: relative;"><iframe class="maps" width="700" height="500" src="https://maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;q=Ferraris%20Matafuegos%2C%20Avenida%20Maip%C3%BA%2C%20IBG%2C%20Provincia%20de%20C%C3%B3rdoba%2C%20Argentina+(Matafuegos%20Ferraris)&amp;ie=UTF8&amp;t=&amp;z=15&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><div style="position: absolute;width: 80%;bottom: 10px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;text-align: center;"><small style="line-height: 1.8;font-size: 2px;background: #fff;">Powered by <a href="http://www.googlemapsgenerator.com/zh/">gmapgen zh</a> & <a href="https://spindelharpan.nu/">patiens spindelharpan</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><br />
+    </div>
+    
+</main>

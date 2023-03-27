@@ -1,0 +1,17 @@
+<div [id]="idFinal" class="carousel carousel-dark slide" data-bs-ride="carousel"
+  style="width: 300px; height: 250px;margin: auto; margin-bottom: 40px;">
+  <div class="carousel-inner" style="height: 250px;">
+    <div *ngFor="let img of imagenes; let i = index" class="carousel-item" [class.active]="i==0" style="height: 250px;">
+      <img src="../../../assets/img/productos/{{img}}" class="d-block w-100" alt="..."
+        style="height: 250px; object-fit: contain;">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" [attr.data-bs-target]="'#'+idFinal" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true" style="color: #000;"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" [attr.data-bs-target]="'#'+idFinal" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>

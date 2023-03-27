@@ -1,0 +1,19 @@
+<article *ngIf="!reverse">
+    <div>
+        <h2 class="title-servicio">{{title}}</h2>
+        <p class="txt-servicio">
+            {{text}}
+        </p>
+    </div>
+    <img [src]="'../../../assets/img/' + img" alt="">
+</article>
+
+<article class="reverse" *ngIf="reverse">
+    <img [src]="'../../../assets/img/' + img" alt="" style="background: #fff;" >
+    <div>
+        <h2 class="title-servicio">{{title}}</h2>
+        <p class="txt-servicio">
+            {{text}}
+        </p>
+    </div>
+</article>

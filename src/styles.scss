@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif !important;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-display:initial;
+}
+
+p{
+  margin-bottom: 0 !important;
+}
+ul{
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 500,
+  'GRAD' 0,
+  'opsz' 48
+}

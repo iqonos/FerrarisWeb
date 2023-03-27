@@ -1,0 +1,20 @@
+<article>
+    <span class="container-title" (click)="ActiveItem()">
+        <p class="title-no-boostrap">{{title}}</p>
+        <span class="material-symbols-outlined" [ngClass]="this.isActive == this.productos[0].enum?'active':''">expand_more</span>
+    </span>
+    <div class="container-info" [ngStyle]="{height:this.isActive == this.productos[0].enum?'auto':0}" *ngFor="let producto of productos">
+        <span class="container-info-prod">
+
+            <ul class="list-uso">
+                <li class="item-list-uso" *ngFor="let item of producto.listaUsos">{{item}}</li>
+            </ul>
+            <span class="mas-info-prod">
+                <p class="title-mas-info-prod">{{producto.titleMasInfo}}</p>
+                <p class="txt-mas-info-prod">{{producto.txtMasInfo}}</p>
+            </span>
+        </span>
+        <img src="../../../assets/img/productos/{{producto.img}}" alt="">
+    </div>
+    <app-carrusel *ngIf="listaCarrusel.length>1" [ngStyle]="{display:this.isActive == this.productos[0].enum?'block':'none'}" [imagenes]="listaCarrusel" [id]="productos[0].id" ></app-carrusel>
+</article>

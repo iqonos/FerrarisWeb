@@ -1,0 +1,183 @@
+.section-img-local {
+    background: #ae1818;
+
+    .container-img-btn-local {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            max-width: 100vw;
+        }
+
+        .container-info-horarios {
+            position: absolute;
+            height: 100%;
+            left: 55%;
+            top: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 15px;
+            
+            .txt-title-horario {
+                font-weight: 600;
+                color: #fff;
+                font-size: 14px;
+            }
+            
+            .txt-info-horario {
+                font-size: 9px;
+                color: #fff;
+                padding: 0 10px;
+            }
+
+            .btn-maps-home {
+                border: none;
+                font-size: 12px;
+                font-family: "Poppins", sans-serif;
+                padding: 5px 10px;
+                font-weight: 600;
+                border-radius: 100px;
+                background: #fff;
+                color: #000;
+                margin: 0 auto ;
+            }
+        }
+    }
+}
+
+@media (min-width: 570px) {
+    .section-img-local {
+        .container-img-btn-local {
+            .container-info-horarios {
+                left: 60%;
+                gap: 25px;
+
+                .txt-title-horario {
+                    font-weight: 600;
+                    color: #fff;
+                    font-size: 20px;
+                }
+
+                .txt-info-horario {
+                    font-size: 14px;
+                    color: #fff;
+                }
+
+                .btn-maps-home {
+                    font-size: 16px;
+                    padding: 5px 10px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 800px) {
+    .section-img-local {
+        width: 100vw;
+        height: calc(100vh - 120px);
+
+        .container-img-btn-local {
+            max-width: 1024px;
+            margin: auto;
+
+            .container-info-horarios {
+                left: 60%;
+                gap: 28px;
+
+                .txt-title-horario {
+                    font-weight: 600;
+                    color: #fff;
+                    font-size: 24px;
+                }
+
+                .txt-info-horario {
+                    font-size: 18px;
+                    color: #fff;
+                }
+
+                .btn-maps-home {
+                    font-size: 20px;
+                    padding: 10px 16px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .section-img-local {
+        .container-img-btn-local {
+
+
+            img {
+                height: 100%;
+                max-height: 688px;
+                object-fit: contain;
+            }
+
+            .container-info-horarios {
+                left: 60%;
+                gap: 28px;
+
+                .txt-title-horario {
+                    font-weight: 600;
+                    color: #fff;
+                    font-size: 24px;
+                }
+
+                .txt-info-horario {
+                    font-size: 18px;
+                    color: #fff;
+                }
+
+                .btn-maps-home {
+                    font-size: 20px;
+                    padding: 10px 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .section-img-local {
+        .container-img-btn-local {
+            max-width: 1200px;
+            margin: auto;
+            img {
+                height: 100%;
+                max-height: 688px;
+                object-fit: contain;
+            }
+
+            .container-info-horarios {
+                left: 60%;
+                gap: 30px;
+
+                .txt-title-horario {
+                    font-weight: 600;
+                    color: #fff;
+                    font-size: 45px;
+                }
+
+                .txt-info-horario {
+                    font-size: 22px;
+                    color: #fff;
+                }
+
+                .btn-maps-home {
+                    border: none;
+                    font-size: 24px;
+                    padding: 5px 10px;
+                    background: #fff;
+                }
+            }
+        }
+    }
+}

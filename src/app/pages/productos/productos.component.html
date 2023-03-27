@@ -1,0 +1,38 @@
+<app-header-page title="NUESTROS PRODUCTOS"></app-header-page>
+<main>
+    <section class="container-all-productos">
+        <article class="container-tipo-fuegos">
+            <img src="../../../assets/img/tipos-matafuegos.jpg" alt="">
+            <h3>Clases de Fuego</h3>
+            <p>
+                <strong> Clase A:</strong> Fuegos que se desarrollan sobre combustibles sólidos, como ser madera, papel,
+                telas, gomas,
+                plásticos y otros. Para su extinción requieren de enfriamiento.<br><br>
+                <strong>Clase B: </strong>Fuegos sobre líquidos inflamables, grasas, pinturas, ceras, gases y otros. Se
+                apagan eliminando el
+                oxígeno o interrumpiendo la reacción en cadena que se produce durante la combustión.<br><br>
+                <strong>Clase C: </strong>Fuegos sobre materiales, instalaciones ó equipos sometidos a la acción de la
+                corriente eléctrica.
+                El agente extintor no debe ser conductor de la electricidad.<br><br>
+                <strong>Clase D: </strong>Fuegos sobre metales combustibles, como el magnesio, titanio, potasio, sodio y
+                otros.<br><br>
+                <strong>Clase K: </strong>Fuego de aceites vegetales o grasas animales. Se presenta en las cocinas
+                (Kitchen).
+            </p>
+        </article>
+        <h2>Extintores</h2>
+        <app-deslizar-producto *ngFor="let prod of lstProductos; let i = index" [title]="lstTitleProductosMatafuegos[i]"
+            [productos]="prod" [listaCarrusel]="lstCarruselExtintores[i]"></app-deslizar-producto>
+        <h2>Kits</h2>
+        <app-deslizar-producto *ngFor="let prod of lstProductosKits; let i = index" [title]="lstTitleProductosKit[i]"
+            [productos]="prod" [listaCarrusel]="lstCarruselKits[i]"></app-deslizar-producto>
+        <h2>Artículos de Seguridad</h2>
+        <app-deslizar-producto *ngFor="let prod of lstProductosArticulos; let i = index" [title]="lstTitleProductosArticuloSeguridad[i]"
+            [productos]="prod" [listaCarrusel]="lstCarruselArticulos[i]"></app-deslizar-producto>
+            <h2>Sifones</h2>
+        <app-deslizar-producto *ngFor="let prod of lstProductosSifon; let i = index" [title]="lstTitleProductosSifones[i]"
+            [productos]="prod" [listaCarrusel]="lstCarruselSifones[i]"></app-deslizar-producto>
+
+            <button class="btn-ver-mas">VER MAS</button>
+    </section>
+</main>

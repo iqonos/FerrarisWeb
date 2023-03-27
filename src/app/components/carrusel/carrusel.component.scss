@@ -1,0 +1,12 @@
+.carouselExampleAutoplaying{
+    .carousel-inner{
+        max-height: 250px;
+        .carousel-item{
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+}
